@@ -1,0 +1,267 @@
+@media screen and (min-width: 320px) and (max-width: 567px)  {
+   .content{
+    width: 320px;
+  
+   }
+    body{
+        .global_wrap{
+            header{   
+               padding-left:0;
+               padding-right: 0;
+             .content{
+                    margin: 0;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    margin: 0 auto;
+                    padding: 0;
+                    .big_menu{
+                        width: auto;
+                        nav{
+                            display: none;
+                        }
+                    }
+                        .small_menu{
+                            display: flex;
+                            flex-direction: row;
+                            width: 100px;
+                            align-items: flex-start;
+                            nav{
+                               width: 100px;
+                               .menu_wrap{
+                                  justify-content: center;
+                                  align-items: center;
+                                flex-direction: column;
+                                width: 100px;
+                                margin-top: 0;
+                                    li{
+                                       
+                                        font-size: 14px;
+                                        .second_menu_level{
+                                            width: 300px;
+                                            padding-top: 0;
+                                             display: none;
+                                            // display: block;
+                                            position: relative;
+                                           
+                                            left: -250px;
+                                            .light_block{
+                                                display: none;
+                                            }
+                                            li{
+                                               
+                                                font-size: 12px;
+                                                width: 120px;
+                                                padding: 5px 20px;
+                                                margin: 12.5px 0;  
+                                                
+                                                &:nth-child(2):before{
+                                                    width: 300px;
+                                                    top:0px;
+                                                   
+                                                }
+                                                
+                                                
+                                                .third_menu_level{
+                                                   left: 20px;
+                                                    width: 260px;
+                                                    position: relative;
+                                                    margin: 0;
+                                                     display: none;
+                                                    // display: block;
+                                                  
+                                                    li{
+                                                        &:nth-child(2):before{
+                                                            width: 260px;
+                                                            top:-40px;
+                                                           
+                                                        }
+                                                }
+                                                }
+                                            }
+                                        }
+                                        &:hover .second_menu_level{
+                                            display: block;
+                                        }
+                                } 
+                               }
+                            }
+                        }
+                        .search{
+                            width: 100px;
+                        }
+                    
+                    }
+            }
+            .wrap_home_slider{
+        
+                height: 100vh;
+               
+                
+                 
+                  
+                div{
+                    
+                   
+                   .content{
+                      
+                       
+                       
+                       
+                     .slide_title{
+                        
+                         font-size: 2.5em;
+                         
+                         padding: 0 50px;
+                         
+                     }
+                     .slider_discription{ 
+                         max-width: 500px;
+
+                     }
+                    }
+                }
+             }
+             .product{
+               
+                .prodact_title{
+                   
+                   
+                        span{
+                            color: #fff200;
+                        }
+                }
+                .content{
+                    padding: 0;
+                    .product_slider{
+                        margin-top: 110px;
+                        .slick-list{
+                            .slick-track{
+                                padding: 0;
+                                margin: 0;
+                                width: 310px;
+                            }
+                        }
+                       
+                        div{
+                            
+                            .slider_wrap{
+                                width: 300px;
+                             .slide_content{
+                                 
+                                 width: 300px;
+                                 padding: 0 10px;
+                                 
+                                 .img{
+                                    width: 125px;
+                                    height: 125px;
+                                    
+                                    
+                                    img{
+                                        object-fit: cover;
+                                        margin-left: 50px;
+                                        margin-top: 20px;
+                                       
+                                    }
+                                    
+                                 }
+                                 .information{
+                                     display: flex;
+                                     flex-direction: column;
+                                     width: 160px;
+                                     height: 145px;
+                                     justify-content: space-around;
+                                     align-items: flex-start;
+                                     padding-right: 15px;
+                                     margin-left: 10px;
+                                    
+                                     p{
+                                        margin: 0;
+        
+                                     }
+                                     .title{
+                                        font-size: 24px;
+                                        text-transform: uppercase;
+                                        font-family: LatoHeavy;
+                                     }
+                                     .name_product{
+                                        color: #503392;
+                                     }
+                                     .product_description{
+                                        font-size: 14px;
+                                        color: #373737;
+                                     }
+                                 }
+                             }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .contact_section{
+               
+               
+               
+                .contact_block{
+                   
+                   
+                    .contact_wrap{
+                        
+                        .contact_content{
+                            max-width: 320px;
+                            height: auto;
+                            flex-direction: column;
+                           
+                            
+                            .send_block{
+                                width: 320px;
+                                form{       
+                                .full_name{
+                                    width: 100%;
+                                }
+                                .email_input{
+                                    width: 278px;
+                                    
+                                }
+                            
+                            }
+                            
+                        }
+                        
+                        }
+                    }
+                }
+                
+            }
+            .footer{
+                padding: 15px 30px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #1a1a1a;
+                color:#fff;
+                .copyright{
+                    font-size: 14px;
+                }
+                a{
+                    margin: 5px;
+                }
+                .facebook{
+                    color:#6782b8;
+                   
+                    
+                }
+                .google{
+                    color:#e86d54;
+                }
+                .twitter{
+                    color:#71d6fa;
+                }
+                .dribble{
+                    color:#f17ba3;
+                }
+            }
+        }
+    }
+}

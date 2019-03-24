@@ -1,0 +1,390 @@
+@media screen and  (max-width: 320px){ 
+
+
+
+.content{
+    max-width: 290px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body{
+  
+    .global_wrap{
+  
+       
+
+        header{
+           
+            padding:  10px 0;
+
+            .content{
+               width: 280px;
+                padding: 0;
+                margin: 0;
+                .big_menu,
+                .small_menu{
+                    padding: 0;
+                    width: 290px;
+                    
+                    nav
+                    {
+                        width:200px;
+                      
+                        .menu_wrap{
+                            position: absolute;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            background-color: #fff;
+                            width:320px;
+                            padding: 0;
+                            left: -135px;
+                                top:-35px;
+                            z-index: 2;
+                                li{
+                                width: 70px;
+                                 position: relative;
+                                text-align: center;
+                               
+                                    
+                                    
+                                    a{
+                                        position: relative; 
+                                        color: #000;
+                                        transition-duration: .3s;
+                                        &:hover{
+                                            font-family: LatoBold;
+                                            transition-duration: .3s;
+    
+                                        }
+                                    }
+                                    .active{
+                                        font-family: LatoBold;
+                                            transition-duration: .3s;
+                                           
+                                    }
+                                    
+                                       
+                                       
+                                    .second_menu_level{
+                                        padding: 0;
+                                        position: relative;
+                                        width:300px;
+                                        background-color: rgba(44, 28, 64, 0.8);
+                                        padding-top: -10px;
+                                       left: 0px;
+                                       z-index: 2;
+                                      
+                                        display: none;
+                                        
+                                        
+                                        .light_block{
+                                            display: none;
+                                        }
+                                        li{
+                                            position: relative;
+                                            width: 135px;
+                                            padding: 0 30px;
+                                            margin: 12.5px 0;  
+                                            text-align: left;
+                                            font-size: 14px;
+                                            &:nth-child(2):before{
+                                                content:"";
+                                                width: 300px;
+                                                height: 2px;
+                                                background-color: #fff200;
+                                                position: absolute;
+                                                top:-0px;
+                                                left: 0px;
+                                               
+                                            }
+                                            a{
+                                                position: relative;
+                                                color: #fff;
+
+                                                &:before{
+                                                    position: absolute;
+                                                    content: ">";
+                                                    left:-12.5px;
+                                                }
+                                                &:hover{
+                                                    position: relative;
+                                                    color: #fff200;
+                                                    transition-duration: 0.3s;
+                                                    &:after{
+                                                        position: absolute;
+                                                        content: ">";
+                                                        left: -8px;
+                                                        
+                                                    }
+                                                }
+                                            }
+                                            &:hover .third_menu_level{
+                                                display: block;
+                                                transition-duration: .3s;
+                                            }
+                                            .third_menu_level{
+                                                position: relative;
+                                                padding: 0;
+                                                width: 300px;
+                                                background-color: rgba(44, 28, 64, 0.8);
+                                                left:  -30px;
+                                               
+                                                display: none;
+                                                z-index: 2;
+                                                li{
+                                                    &:nth-child(2):before{
+                                                        
+                                                        top:-30px;
+                                                       
+                                                    }
+                                            }
+                                            }
+                                        }
+                                    }
+                                    &:hover .second_menu_level{
+                                        display: block;
+                                        transition-duration: .3s;
+                                    }
+                                
+                        
+                        
+                            } 
+                           }
+                    }
+                    .search{
+                        position: relative;
+                        display: flex;
+                        flex-direction: row;
+                        width: 150px;
+                        height: 30px;
+                        background-color: #e8e4f1;
+                        padding: 0 10px;
+                        align-items: center;
+                        input{
+                            position: relative;
+                            background-color: #e8e4f1;
+                            outline: none;
+                            border: none;
+                            width: 130px;
+                        }
+                        button{
+                            position: absolute;
+                            background-color: transparent;
+                            top:50%;
+                            right: 0;
+                            transform: translateY(-50%);
+                            
+                        }
+                    }
+                }
+                
+                .big_menu{
+                    display: none;
+                }
+                .small_menu{
+                        display: block;
+                        width: auto;
+                        
+                        .burger_menu{
+                            position: absolute;
+                            top:-5px;
+                            right: 5px;
+                            z-index: 3;
+                            .bar1, .bar2, .bar3 {
+                                width: 20px;
+                                height: 3px;
+                                background-color: #333;
+                                margin: 6px 0;
+                                transition: 0.4s;
+                               
+                              }
+                        }
+                        .change{
+                            .bar1 {
+                               
+                                transform: rotate(-45deg) translate(-5px, 6px);
+                              }
+                              .bar2 {opacity: 0;}
+                              .bar3 {
+                              
+                                transform: rotate(45deg) translate(-7px, -8px);
+                              }
+                        }
+                        
+                    
+                }
+                .close{
+                    display: none;
+                    right: 0;
+                    z-index: 5;
+                }
+
+        }
+    }
+    
+    .wrap_home_slider{
+  
+        .top-slider{
+               div{    
+                  .content{
+                     padding: 0;
+                      width: 290px;
+                      .slide_title{
+                          font-size: 70px;
+                      }
+                    
+                   }
+               }
+            }
+       
+    }
+    .about{
+      
+        .content{
+            padding: 5px;
+            .skill_title{
+                
+            }
+            .skill_description{
+              width: 250px;
+            }
+           
+            .skill_wrap{
+                
+                min-width: 290px;
+                padding: left 5px;
+                padding-right: 5px;
+                #skill{
+                    .skills {
+                        
+                        width: 90%;
+                        height: 9px;
+                        border: 1px solid #dddddd;
+                        transition: .4s linear; 
+                        transition-property: width, background-color;
+                        .title {
+                            position: absolute;
+                            font-size: 13px;
+                            top: -44px;
+                            font-weight: bold;
+                            font-family: LatoBold;
+                            color: #444;
+                           
+                          }
+                          .skill-bar {
+                            width: 0;
+                            height: 3px;
+                            background-color: #009dda;
+                            margin-top: 3px;
+                            margin-left: 2px;
+                          }
+                          
+                          .skills-percent {
+                            position: absolute;
+                            right: 0px;
+                            top: -44px;
+                            font-size: 13px;
+                            font-family: LatoBold;
+                          }
+                      }
+                }
+            }
+            
+        }
+    }
+    .product{
+        
+        .prodact_title{ 
+                
+        }
+        .content{
+            padding: 0;
+            .product_slider{
+                margin-top: 110px;
+                .slick-prev,
+                .slick-next{
+                    opacity: 0;
+                    cursor: default;
+                }
+                .slick-dots{
+                    bottom: 0;
+                        li{
+                            button{
+                                &:before{
+                                    color: #503392;
+                                }
+                                &:hover,
+                                &:focus{
+                                    &:before{
+                                        opacity: 0.8;
+                                        color: #503392;
+                                    }
+                                }
+                            }
+                    
+                        }
+                }
+                div{
+                    
+                    .slider_wrap{
+                        
+                     .slide_content{
+                       
+                         width: 300px;
+                         padding: 0 15px;
+                        
+                         .img{
+                            width: 100px;
+                            height: 100px;
+                         }
+                         
+                     }
+                    }
+                }
+            }
+        }
+    }
+   
+    .contact_section{
+        .contact_block{
+            position: relative;
+            width: 100%;
+            height: 800px;
+            
+            .contact_wrap{
+                
+                .contact_content{
+                    flex-direction: column;
+                    height: 700px;
+                    .send_block{
+                        width: 200px;
+                        flex-wrap: wrap;
+
+                        form{
+                        .full_name{
+                            width: 100%;
+                        }
+                        .email_input{
+                            width: 158px;
+                        }
+                        
+                    }
+                    
+                }
+               
+                }
+            }
+        }
+    }
+    .footer{
+       
+        flex-direction: column;
+        text-align: center;
+    }
+}
+}
+
+
+}

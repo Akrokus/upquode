@@ -1,0 +1,113 @@
+@media screen and (min-width: 568px) and (max-width: 768px)  {
+    .content{
+        max-width: 568px;
+    }
+    body{
+        
+        .global_wrap{
+            header{   
+             .content{
+                    
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    .big_menu{
+                        width: auto;
+                        nav{
+                            display: none;
+                        }
+                    }
+                        .small_menu{
+                            display: flex;
+                            flex-direction: row;
+                            width: 100px;
+                            align-items: flex-start;
+                            nav{
+                               width: 100px;
+                               .menu_wrap{
+                                  justify-content: center;
+                                  align-items: center;
+                                flex-direction: column;
+                                width: 100px;
+                                margin-top: 0;
+                                    li{
+                                       
+                                        font-size: 14px;
+                                        .second_menu_level{
+                                            width: 500px;
+                                            padding-top: 0;
+                                             display: none;
+                                            // display: block;
+                                            position: relative;
+                                            left:-15px;
+                                            left: -400px;
+                                            .light_block{
+                                                display: none;
+                                            }
+                                            li{
+                                               
+                                                font-size: 12px;
+                                                width: 120px;
+                                                padding: 5px 20px;
+                                                margin: 12.5px 0;  
+                                                
+                                                &:nth-child(2):before{
+                                                    width: 500px;
+                                                    top:0px;
+                                                   
+                                                }
+                                                
+                                                
+                                                .third_menu_level{
+                                                   left: 20px;
+                                                    width: 460px;
+                                                    position: relative;
+                                                    margin: 0;
+                                                     display: none;
+                                                    // display: block;
+                                                  
+                                                    li{
+                                                        &:nth-child(2):before{
+                                                            width: 460px;
+                                                            top:-40px;
+                                                           
+                                                        }
+                                                }
+                                                }
+                                            }
+                                        }
+                                        &:hover .second_menu_level{
+                                            display: block;
+                                        }
+                                } 
+                               }
+                            }
+                        }
+                    }
+            }
+            .wrap_home_slider{
+        
+                height: 100vh;
+
+                div{
+ 
+                   .content{
+ 
+                       
+                     .slide_title{
+                        
+                         font-size: 3em;
+                         
+                         padding: 0 50px;
+                         
+                     }
+                     .slider_discription{ 
+                         max-width: 500px;
+
+                     }
+                    }
+                }
+             }
+        }
+        
+    }
+}
