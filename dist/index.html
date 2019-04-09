@@ -7,15 +7,17 @@
         
         <link rel="stylesheet" href="css/libs.min.css">
        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-       <!-- <link rel="stylesheet" href="libs/slick/slick.css">
-       <link rel="stylesheet" href="libs/slick/slick-theme.css"> -->
+       <link rel="stylesheet" href="css/slick.css">
+       <link rel="stylesheet" href="css/slick-theme.css">
+       
+       
        <link rel="stylesheet" href="css/style.css"> 
        
        <script src="js/libs.min.js"></script>
        
        <!-- <script src="js/jquery-1.11.0.min.js"></script>
-       <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
-       <!-- <script src="libs/slick/slick.min.js"></script> -->
+       <script src="js/jquery-migrate-1.2.1.min.js"></script>  -->
+         <!-- <script src="libs/slick/slick.min.js"></script> -->
 
       
        <script src="js/command.js"></script>
@@ -632,7 +634,7 @@ Nullam at scelerisque tellus mattis volutpat rhoncus,
                         <div class="send_block">
                                 <form action="/registration" method="POST">
                             <input class="full_name" type="text" placeholder="Full Name" >
-                            <form  class="email_form" >
+                            <div  class="email_form" >
                                 <input list="emails" placeholder="Email" class="email_input" >
                                 <datalist id="emails">
                                         <select class="nice-select">
@@ -641,19 +643,10 @@ Nullam at scelerisque tellus mattis volutpat rhoncus,
                                                 <option value="yourname@mail.com"></option>
                                               </select>
                                 </datalist>
-                              </form>
+                        </div>
                               <textarea placeholder="Massege" class="massege" ></textarea>
-                                  
-                              <form>
-                                    
-                                    
                                     <input id="checkbox-input-1" type="checkbox" value="true" checked>
                                     <label for="checkbox-input-1" class="input-helper input-helper--checkbox">I like your company</label>
-                                    
-                                    
-                                </form>
-
-
                                 <button class="send" >Send</button>
                             
                         </form>

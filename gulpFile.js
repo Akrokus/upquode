@@ -21,19 +21,13 @@ gulp.task('scss', function(){
 });
 
 gulp.task('scrips', function(){
-    return gulp.src([
-        'app/libs/jquery/dist/jquery.min.js'
-        
-        
-        
-    ])
+    return gulp.src(['app/js/jquery-1.11.0.min.js', 
+    'app/js/jquery-migrate-1.2.1.min.js',
+    'app/libs/slick/slick.min.js'])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js'))
-})
-
-
-
+});
 
 gulp.task('css-libs', ['scss'],function(){
     return gulp.src(['app/css/libs.css'])
@@ -72,13 +66,24 @@ gulp.task('img', function(){
 
 });
 
+gulp.task('copy', function(){
+    return gulp.src(['app/libs/slick/slick-theme.css',
+'app/libs/slick/slick.css'])
+    .pipe(gulp.dest('dist/css'));
+
+});
+gulp.task('slick-font', function(){
+    return  gulp.src('app/libs/slick/fonts/**')
+    .pipe(gulp.dest('dist/css/fonts'));
+});
+
 gulp.task('watch',['browser-sync','css-libs', 'scrips'], function(){
     gulp.watch('app/sass/**/*.scss',['scss']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/*.js', browserSync.reload);
 });
 
-gulp.task('build', ['clean','img','scss','scrips'],function(){
+gulp.task('build', ['copy','slick-font','clean','img','scss','scrips'],function(){
     var buildCss = gulp.src([
         'app/css/style.css',
         'app/css/libs.min.css'
